@@ -4,15 +4,11 @@
   box-sizing: border-box;
 }
 
-body{
-  background:  #151531;
-}
-
 header{
   align-items: center;
   justify-content:space-around;
   align-items:center;
-  background:  #151531;
+  background:  #0c0c1b;
   padding: 20px 60px;
 }
 
@@ -76,7 +72,7 @@ button{
   color: rgb(219, 151, 219);
   font-size: 50px;
   text-align: center;
-  margin-top: 150px;
+  margin-top: 130px;
 }
 
  .main-para{
@@ -84,17 +80,16 @@ button{
   text-align: center;
   font-size: 22px;
   margin: 30px 170px;
-  margin-bottom: 100px;
+  margin-bottom: 60px;
 }
 
 .heading{
   position: relative;
-  margin: 30px 0;
 }
 
 .heading hr{
   border: none;
-  height: 0.2px;
+  height: 1px;
   background: #ccc;
 }
 
@@ -110,8 +105,13 @@ button{
   color: darkgray;
 }
 
+.main-container{
+  background-color: #0c0c1b;
+}
+
 .container{
-  margin: 50px 200px;
+  background-color: #0c0c1b;
+  margin: 60px 200px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
@@ -132,4 +132,22 @@ button{
   transition: all 0.3s ease;
   border: 1px solid rgb(180, 180, 180);
   transform: translate(-2px);
+  cursor: pointer;
 }
+
+.btn{
+  display: flex;
+  font-size: 20px;
+  justify-content: space-between;
+  padding: 15px 10px;
+  color: gray;
+  border: 1px dotted rgb(88, 88, 88);
+  border-radius: 5px;
+  background-color: #0c0c1b;
+}
+
+.btn:hover {
+  background-color: #1a068b1b;
+  cursor: pointer;
+}
+
