@@ -44,7 +44,7 @@ button{
 
 .login{
   border: none;
-  background-color: #151531;
+  background-color: #0c0c1b;
   color: gray;
   font-size: 14px;
 }
@@ -111,10 +111,11 @@ button{
 
 .container{
   background-color: #0c0c1b;
-  margin: 60px 200px;
+  margin: 20px 200px 0 200px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
+  padding: 56px 0;
 }
 
 .card{
@@ -149,4 +150,139 @@ button{
 .btn:hover {
   background-color: #1a068b1b;
   cursor: pointer;
+}
+
+.guide-section{
+  background: #f1f1f1;
+}
+
+section{
+  width: 70%;
+  margin: auto;
+}
+
+section h2{
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.june{
+  background-color: rgba(96, 221, 123, 0.868);
+  color: rgb(18, 17, 17);
+  padding: 4px 5px;
+  font-size: 13px;
+  border-radius: 2px;
+  margin-left: 8px;
+}
+
+.guide{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid gray;
+}
+
+.guide a , span{
+  color: gray;
+  margin: 10px 0;
+  text-decoration: none;
+}
+
+.guide:hover a{
+  color: rgb(64, 64, 253);
+  transform: translate(10px);
+  transition: all 0.15s ease-in-out;
+  cursor: pointer;
+}
+
+.view{
+  background: #0f0f0ff8;
+  color: white;
+  padding: 10px 12px;
+  border-radius: 50px;
+  border: none;
+  margin: 20px auto 80px 15px;
+  font-size: 14px;
+}
+
+.view:hover{
+  background: rgb(71, 71, 255);
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+
+.rocket{
+ font-size: 60px;
+ display: inline-block;
+ animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float{
+  0%,100%{
+    transform: translateY(0) rotate(0deg);
+  } 50% {
+    transform: translateY(-10px) rotate(-5deg);
+  }
+}
+
+.second-last h2{
+  font-size: 55px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.second-last p{
+  color: #606060;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.line{
+  position: relative;
+}
+
+.line::before{
+  content: "";
+  position: absolute;
+  left: 20%;
+  top: 0;
+  width: 3px;
+  height: 80px;
+  background: #ccc;
+}
+
+.line-item{
+  position: relative;
+  grid-template-columns: 20% 40px 1fr;
+  display: grid;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.date{
+  text-align: left;
+  padding-right: 20px;
+}
+
+.middle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dot{
+  position: absolute;
+  left: 19.1%;
+  width: 18px;
+  height: 18px;
+  background: #ccc;
+  border-radius: 9px;
+ 
+}
+
+.cards{
+  border: none;
+  background: #fff;
+  font-size: 18px;
 }
