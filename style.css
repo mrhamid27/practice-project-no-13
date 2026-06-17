@@ -111,7 +111,7 @@ button{
 
 .container{
   background-color: #0c0c1b;
-  margin: 20px 200px 0 200px;
+  margin: 0 200px 0 200px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
@@ -154,6 +154,7 @@ button{
 
 .guide-section{
   background: #f1f1f1;
+  padding: 60px 0;
 }
 
 section{
@@ -162,7 +163,7 @@ section{
 }
 
 section h2{
-  font-size: 36px;
+  font-size: 50px;
   margin-bottom: 20px;
 }
 
@@ -200,7 +201,7 @@ section h2{
   padding: 10px 12px;
   border-radius: 50px;
   border: none;
-  margin: 20px auto 80px 15px;
+  margin: 20px auto 20px 15px;
   font-size: 14px;
 }
 
@@ -225,6 +226,10 @@ section h2{
   }
 }
 
+.second-last{
+  padding: 30px 0;
+}
+
 .second-last h2{
   font-size: 55px;
   font-weight: bold;
@@ -238,6 +243,10 @@ section h2{
   margin-bottom: 25px;
 }
 
+.line-container{
+  padding: 30px 0;
+}
+
 .line{
   position: relative;
 }
@@ -246,10 +255,15 @@ section h2{
   content: "";
   position: absolute;
   left: 20%;
+  transform: translateX(-50%);
   top: 0;
-  width: 3px;
-  height: 80px;
+  width: 2px;
+  height: 85px;
   background: #ccc;
+}
+
+.last-line::before{
+  height: 10px;
 }
 
 .line-item{
@@ -273,7 +287,8 @@ section h2{
 
 .dot{
   position: absolute;
-  left: 19.1%;
+  left: 20%;
+  transform: translateX(-50%);
   width: 18px;
   height: 18px;
   background: #ccc;
@@ -284,5 +299,73 @@ section h2{
 .cards{
   border: none;
   background: #fff;
-  font-size: 18px;
+  font-size: 20px;
 }
+
+.button-div{
+  padding-left: 15%;
+}
+
+
+.changelog-btn{
+  background: #000;
+  color: rgb(230, 230, 230);
+  height: 42px;
+  border-radius: 50px;
+  border: none;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.changelog-btn:hover{
+  opacity: 0.8;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.notification-btn{
+  background: #fff;
+  color: rgb(0, 0, 0);
+  height: 42px;
+  border-radius: 50px;
+  border: 1px solid black;
+  font-size: 16px;
+}
+
+.notification-btn:hover{
+  background: #000;
+  color: rgb(230, 230, 230);
+  border: none;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.last-hr{
+  border: 0.5px solid lightgray;
+  opacity: 0.4;
+}
+
+.cummunity{
+  padding: 60px 0;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.cummunity h1{
+  text-align: center;
+  font-size: 65px;
+  margin-bottom: 20px;
+}
+
+.cummunity p{
+  color: gray;
+  font-size: 22px;
+  text-align: center;
+}
+
+.cummunity span{
+  text-decoration: underline;
+  color: rgb(97, 97, 97);
+  font-weight: bold;
+}
+
