@@ -69,7 +69,17 @@ button{
 }
 
  .main-heading{
-  color: rgb(219, 151, 219);
+    background: linear-gradient(
+    to bottom,
+    #e9d5ff,
+    #c084fc,
+    #9333ea
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
   font-size: 50px;
   text-align: center;
   margin-top: 130px;
@@ -95,7 +105,7 @@ button{
 
 .heading span{
   position: absolute;
-  top: 50%;
+  top: -900%;
   left: 50%;
   transform: translate(-50%, -50%);
   background: #151531;
@@ -111,7 +121,8 @@ button{
 
 .container{
   background-color: #0c0c1b;
-  margin: 0 200px 0 200px;
+  margin-left: 20%;
+  margin-right: 20%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
@@ -120,7 +131,7 @@ button{
 
 .card{
   display: flex;
-  font-size: 20px;
+  font-size: 18px;
   justify-content: space-between;
   padding: 15px 10px;
   color: gray;
@@ -538,4 +549,264 @@ footer ul li a:hover{
   display: flex;
   gap: 10px;
   padding-left: 15px;
+}
+
+@media (max-width:786px){
+
+  header{
+    padding:20px;
+  }
+
+  nav{
+    flex-direction:column;
+    gap:20px;
+  }
+
+  .nav-links{
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+  }
+
+  .main-heading{
+    font-size:36px;
+    margin-top:80px;
+  }
+
+  .main-para{
+    margin:20px;
+    font-size:18px;
+  }
+
+  .container{
+    grid-template-columns:1fr;
+    margin:0 20px;
+  }
+
+  section{
+    width:95%;
+  }
+
+  .cards-section{
+    grid-template-columns:1fr;
+    gap:30px;
+  }
+
+  .footer-main-div{
+    flex-direction:column;
+    gap:40px;
+    padding:20px;
+  }
+
+  .a-section{
+    flex-wrap:wrap;
+    justify-content:center;
+  }
+
+  .guide{
+    flex-direction:column;
+    gap:10px;
+  }
+
+  .line-item{
+    grid-template-columns:1fr;
+    row-gap:15px;
+  }
+
+  .line::before,
+  .dot{
+    display:none;
+  }
+
+  .button-div{
+    padding-left:0;
+    text-align:center;
+  }
+}
+
+@media (max-width:425px){
+
+  header{
+    padding:15px;
+  }
+
+  .main-heading{
+    font-size:30px;
+    margin-top:70px;
+  }
+
+  .main-para{
+    font-size:16px;
+    margin:20px 15px;
+  }
+
+  .container{
+    margin:0 15px;
+  }
+
+  section h2{
+    font-size:32px;
+  }
+
+  .second-last h2{
+    font-size:34px;
+  }
+
+  .second-last p{
+    font-size:17px;
+  }
+
+  .cummunity{
+    padding:30px 15px;
+  }
+
+  .cummunity h1{
+    font-size:34px;
+  }
+
+  .cummunity p{
+    font-size:17px;
+  }
+
+  .card-1 h1{
+    font-size:40px;
+  }
+
+  .login,
+  .sign{
+    width:100%;
+  }
+
+}
+
+
+@media (max-width:375px){
+
+  .main-heading{
+    font-size:26px;
+  }
+
+  .main-para{
+    font-size:15px;
+    margin:15px 10px;
+  }
+
+  .container{
+    margin:0 10px;
+  }
+
+  section h2{
+    font-size:28px;
+  }
+
+  .second-last h2{
+    font-size:30px;
+  }
+
+  .second-last p{
+    font-size:16px;
+  }
+
+  .cummunity h1{
+    font-size:30px;
+  }
+
+  .cummunity p{
+    font-size:16px;
+  }
+
+  .card,
+  .btn{
+    font-size:16px;
+    padding:12px;
+  }
+
+  .card-1 h1{
+    font-size:36px;
+  }
+
+}
+
+
+@media (max-width:320px){
+
+  header{
+    padding:15px;
+  }
+
+  .main-heading{
+    font-size:24px;
+    margin-top:60px;
+  }
+
+  .main-para{
+    font-size:14px;
+    margin:15px 10px;
+  }
+
+  .container{
+    margin:0 10px;
+    grid-template-columns:1fr;
+  }
+
+  .card,
+  .btn{
+    font-size:15px;
+    padding:10px;
+  }
+
+  section{
+    width:95%;
+  }
+
+  section h2{
+    font-size:24px;
+  }
+
+  .second-last h2{
+    font-size:26px;
+  }
+
+  .second-last p{
+    font-size:15px;
+  }
+
+  .cummunity{
+    padding:25px 10px;
+  }
+
+  .cummunity h1{
+    font-size:26px;
+  }
+
+  .cummunity p{
+    font-size:15px;
+  }
+
+  .card-1 h1{
+    font-size:32px;
+  }
+
+  .nav-links{
+    flex-direction:column;
+    gap:10px;
+  }
+
+  .login,
+  .sign,
+  .changelog-btn,
+  .notification-btn{
+    width:100%;
+  }
+
+  .footer-main-div{
+    padding:15px;
+  }
+
+  .a-section{
+    flex-direction:column;
+    align-items:center;
+    gap:10px;
+  }
+
 }
